@@ -14,15 +14,17 @@ function stairsOrDoor() {
 }
 
 function weaponofChoice() {
-  var weapon = document.getElementById("weapon").value;
+  var whereTo = document.getElementById("whereTo").value;
     debugger;
-    if (weapon === '1' || weapon ==='3') {
-    document.getElementById("poolNoodle").classList.toggle('hidden');
+    if (whereTo === '1') {
+    document.getElementById("maze").classList.toggle('hidden');
     document.getElementById("story").classList.toggle('hidden');
-   } else if (weapon == '2') {
-    document.getElementById("sword").classList.toggle('hidden');
+  } else if (whereTo == '2') {
+    document.getElementById("attic").classList.toggle('hidden');
     document.getElementById("story").classList.toggle('hidden');
-  } else { document.getElementById("death").innerHTML = "Grenades don't work on dragons, dude!"}
+  } else {
+    document.getElementById("basement").classList.toggle('hidden');
+    document.getElementById("story").classList.toggle('hidden');
 }
 
 //UL Logic
@@ -45,6 +47,5 @@ $( document ).ready(function() {
       $("#nmform").addClass("hide");
       $("#raceform").removeClass("hide");
     }
-  
   });
-});
+  });
