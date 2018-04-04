@@ -1,0 +1,49 @@
+.hidden {
+  display:none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.container {
+  background-color: #696969;
+  opacity: .90;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+
+button {
+  color: #000000; /* to override white font color */
+  padding: 5px 10px 5px 10px;
+  height:30px;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  margin: 15px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: cursive;
+}
+
+.jumbotron {
+  border: 5px solid black;
+  margin-top: 20px;
+  color: Black;
+  text-align: left;
+  background-image: url(../img/creepyhouse.jpg);
+  background-size: 100%;
+  font-family: bold;
+
+img {
+  width: 400px;
+  height: 300px;
+  float:left;
+  margin-right: 10px;
+}

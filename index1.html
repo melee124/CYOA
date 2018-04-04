@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/scripts.js"></script>
+      <title>Choose Your Own Adventure</title>
+      <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h2>
+          CHOOSE YOUR PATH
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+   </head>
+   <body>
+     <h1 class="center">Are you ready...</h1>
+       <h2 class="center" id="subtitle">...for an adventure?</h2>
+       <hr>
+       <form id ="nmform">
+         <div class="std-margin">
+           <label for="cname">What is your Super Hero name? </label>
+           <input type="text" name="name" id="cname">
+         </div>
+         <div class="std-margin">
+           <button id="nbtn">BEGIN</button>
+         </div>
+       </form>
+       <div id="story">
+         <div class="container">
+            <p>The villainous Joker has tricked Super "heroName" into drinking a super-UN-super potion that turns any super hero into a normal human being! Joker has hidden the antidote to this poisonous potion somewhere inside a maze house filled with dangerous monsters! You, dear reader, must help Super "heroName" choose the right path to the antidote without being eaten alive and before Joker's potion steals "heroName"'s super powers forever! Ready, lets begin...
+
+              "You'll never find the antidote in time, Super "heroName," laughed the Joker hysterically while Super "heroName" dashed towards the maze house. But once Super "heroName" arrived the effects of the super-Un-super potion could already be felt. Super "heroName" had two choices</p>
+         </div>
+         <div class="container">
+            <input id="response" placeholder="Type 'ENTER MAZE' or 'WUSS OUT' . Case sensitive!" size="50"> <button onclick="enterOrWuss()">CHOOSE YOUR PATH!</button>
+            <p id="error"></p>
+         </div>
+      </div>
+      <div class="hidden" id="Door">
+         <div class="container text-background">
+            <p>You OPEN THE DOOR and go down to the basement, but it is completely black. Suddenly a gigantic dragon appears and belches a ball of fire at you.</p>
+            <p>Now is your chance<span class="inputheroName"></span>! Reach for a weapon!</p>
+            <p>Pick select a number from 1 to 4 to grab something around you:</p>
+            <input id="weapon" placeholder="Please enter a number from 1 to 4, using numberals." size="50"> <button onclick="weaponofChoice()">DEFEND YOURSELF!</button>
+
+            </div>
+
+         </div>
+      </div>
+      <div class="hidden" id="stairs">
+         <div class="container text-background">
+            <p>You walk up the stairs. A strange feeling overcomes you. A black cloud suddenly surrounds the attic.</p>
+            <p>You are unable to breath. Slowly you lose consciousness from lack of air.</p>
+            <p>You are dead.</p>
+            <p>Would you like to play again? Refresh the browser!</p>
+         </div>
+       </div>
+      </div>
+      <div class="hidden" id="poolNoodle">
+        <div class="container text-background">
+          <p>You have reached directly behind you, and selected a pool noodle...um...</p>
+          <p>Here's hoping it's not flammable.</p>
+          <p>Before you can respond or even react, he lunges down at you and bites your head off.</p>
+          <p>You are dead.</p>
+          <p>Would you like to play again? Refresh the browser!</p>
+        </div>
+        <div class="hidden" id="grenade">
+
+        </div>
+        <div class="hidden" id="sword">
+          <div class="container text-background">
+          <p>You have chosen wisely! From an umbrella stand next to you, you've pulled out a sword.</p>
+          <p>With it, you slay the dragon, free the town, and win the fair maiden's hand.</p>
+          </div>
+        </div>
+        <div class="std-margin" id="charID">
+            <p id="idLine"></p>
+        </div>
+      </div>
+   </body>
+</html>
